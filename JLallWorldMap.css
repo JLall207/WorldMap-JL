@@ -1,0 +1,133 @@
+/*Importing the font for my CSS*/
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+html {
+  font-family: "Rubik", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+       margin: 0;
+       padding: 0;
+   }
+
+/*Configuring the background color of my SVG map*/
+   body {
+       overflow-x: hidden;
+       overflow-y: hidden;
+       background-color: rgb(45, 91, 241);
+   }
+   
+/*Configuring placement of the Country info box*/
+   #infoBox {
+       position:  relative;
+       width: fit-content;
+       border-radius: 5px;
+       padding-top: 25%;
+
+   }
+
+/*Configuring placement of the svg map column (#1)*/
+   .svgCol{
+    position: relative;
+    flex: 1;
+    border: 5px solid black;
+  }
+
+/*Configuring placement of the info box column (#2)*/
+   .infoCol{
+    position: relative;
+    flex: 1;
+    border: 5px solid black;
+    background: rgb(197, 201, 198);
+  }
+
+
+/*Configuring mouseover functionality for the SVG*/
+   svg path {
+       cursor: pointer;
+   }
+
+/*Configuring the sizing and display of the SVG*/
+svg{
+  height: auto;
+  width: auto;
+  padding: 25px;
+}
+
+.container{
+  margin: 0;
+}
+
+/*Configuring the title bar*/
+.title{
+    width: 100%;
+    display: flex;
+
+    flex-wrap: nowrap;
+}
+
+/*Configuring the map container*/
+.map{
+    width: 150%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/*Configuring the stylization of the title bar*/
+.titleBar{
+  background: rgb(197, 201, 198);
+  position: relative;
+  flex: 1;
+  max-width: 100%;
+  height: 60px;
+  margin: 0;
+  padding-left: 50px;
+  border: 5px solid black;
+}
+
+/*Configuring stylization of the search bar*/
+.searchBar input[type=text] {
+    float: right;
+    padding: 6px;
+    border: 5px solid black;
+    margin-top: 8px;
+    margin-right: 16px;
+    position: absolute;
+    top: 2px;
+    right: 16px;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+
+/*Configuring stylization of the search button*/
+.searchButton{
+    float: right;
+    padding: 6px;
+    border: 5px solid black;
+    margin-top: 8px;
+    margin-right: 16px;
+    position: absolute;
+    top: 2px;
+    right: 16px;
+    font-size: 18px;
+    cursor: pointer;
+    }
+
+#titleHead {
+  padding-top: 10px;
+
+}
+
+/*Configuring stylization of the info box*/
+.infotable{
+  width: auto;
+  height: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: rgb(197, 201, 198);
+  border-image-repeat: stretch;
+  border-radius: 5px;
+}
